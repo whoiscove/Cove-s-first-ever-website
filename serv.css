@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    font-family: 'raleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(bg.jpg);
+}
+
+.wrapper h1{
+    font-size: 3em;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+} 
+
+
+.wrapper p{
+    color: #C71010;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+
+.content box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px
+}
+
+
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.2);
+    
+}
+
+.card i{
+    margin: 20px;
+    color: #ff5724;
+}
+
+.card h2{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;   
+    
+}
+
+.card p{
+    color: darkgrey;
+    text-align: center;
+}
+
+
+.card:hover{
+    
+}
+
+
+.card:hover p{
+    color: #fff;
+}
+
+.card:hover h2{
+    font-weight: 500;
+}
+
+
+.card:nth-child(1):hover{
+    background:linear-gradient(45deg,
+                               rgba(255,28,8,0.7) 0%,
+                               rgba(255,0,82,0.7) 100%),
+                            url('bizx.png');
+    background-size: cover;
+
+}
+
+
+.card:nth-child(2):hover{
+    background:linear-gradient(45deg,
+                               rgba(255,28,8,0.7) 0%,
+                               rgba(255,0,82,0.7) 100%),
+                            url('biz2.png');
+    background-size: cover;
+
+}
+
+
+.card:nth-child(3):hover{
+    background:linear-gradient(45deg,
+                               rgba(255,28,8,0.7) 0%,
+                               rgba(255,0,82,0.7) 100%),
+                            url('biz3.png');
+    background-size: cover;
+
+}
+
+.card:nth-child(4):hover{
+    background:linear-gradient(45deg,
+                               rgba(255,28,8,0.7) 0%,
+                               rgba(255,0,82,0.7) 100%),
+                            url('biz.jpg');
+    background-size: cover;
+
+}
+
+
+
+@media(max-width: 991px)
+{    
+    
+    .wrapper{
+      padding: 25px;
+    }
+    
+    .wrapper h1{
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+    
+    .content box{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
+    .card{
+        min-width: 300px;
+        margin: 10px auto;
+        
+    }
+    
+}
